@@ -9,8 +9,11 @@ const PORT = process.env.PORT || 8070;
 
 // CORS configuration
 app.use(cors({
-    origin: "https://newsweb-frontend.vercel.app/",
-    credentials: true 
+    origin: [
+        "http://localhost:3000",              // For local development
+        "https://newsweb-frontend.vercel.app" // Your production Next.js URL
+    ],
+    credentials: true
 }));
 
 app.use(cors());
