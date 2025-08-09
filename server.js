@@ -8,10 +8,10 @@ require("dotenv").config();
 const PORT = process.env.PORT || 8070;
 
 // CORS configuration
-// app.use(cors({
-//     origin: "https://next-news-portal-seven.vercel.app/",
-//     credentials: true 
-// }));
+app.use(cors({
+    origin: "https://newsweb-frontend.vercel.app/",
+    credentials: true 
+}));
 
 app.use(cors());
 
