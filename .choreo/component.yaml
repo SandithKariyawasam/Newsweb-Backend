@@ -1,9 +1,10 @@
-schemaVersion: 1.1
+schemaVersion: "1.2"
 endpoints:
-  - name: news-backend       
-    displayName: News Backend
-    service:
-      basePath: /            
-      port: 8080           
-    type: REST
-    networkVisibility: Public
+    - name: news-backend
+      displayName: News Backend
+      service:
+        basePath: /
+        port: 8080
+      type: REST
+      networkVisibilities:
+        - Public
